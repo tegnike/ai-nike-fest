@@ -140,8 +140,8 @@ const works: Work[] = [
     category: '映像・音楽',
     description: '伝説のバンドが帰ってきた。山下さんがAIニケフェスに合わせて復活させた、約3分の記念MV。',
     image: '/ai-nike-punk-return.webp',
-    platforms: ['Xで視聴', 'MV'],
-    href: 'https://x.com/0235_jp/status/2094353864006988028',
+    platforms: ['YouTube', 'MV'],
+    href: 'https://www.youtube.com/watch?v=H7TglUx-HqE',
     xUrl: 'https://x.com/0235_jp/status/2094353864006988028',
   },
   {
@@ -244,6 +244,7 @@ export function FestivalGallery() {
       <div className="work-grid full-grid">
         {visibleWorks.map((work) => {
           const directIsX = work.href === work.xUrl;
+          const directIsYouTube = work.href.includes('youtube.com') || work.href.includes('youtu.be');
           return (
             <article className="work-card" key={`${work.title}-${work.handle}`}>
               <a className="work-image" href={work.href} target="_blank" rel="noreferrer">
@@ -262,7 +263,7 @@ export function FestivalGallery() {
                 </div>
                 <div className="card-actions">
                   <a className="primary-action" href={work.href} target="_blank" rel="noreferrer">
-                    {directIsX ? 'Xで作品を見る' : '作品をひらく'} <ArrowUpRight size={15} />
+                    {directIsYouTube ? 'YouTubeで見る' : directIsX ? 'Xで作品を見る' : '作品をひらく'} <ArrowUpRight size={15} />
                   </a>
                   {!directIsX && (
                     <a className="x-action" href={work.xUrl} target="_blank" rel="noreferrer" aria-label={`${work.title}のX投稿を見る`}>
