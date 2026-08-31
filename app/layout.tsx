@@ -6,7 +6,7 @@ const noto = Noto_Sans_JP({ variable: '--font-noto', subsets: ['latin'] });
 const space = Space_Grotesk({ variable: '--font-space', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ai-nike-fest-2026.tegnike.chatgpt.site'),
+  metadataBase: new URL('https://fes2026.nikechan.com'),
   title: 'AIニケフェス | AIニケちゃんサーバー1周年',
   description: 'AIニケちゃんDiscordサーバー1周年を祝う、コミュニティ作品のオンライン展示会。',
   openGraph: {

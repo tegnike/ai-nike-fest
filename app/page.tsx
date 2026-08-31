@@ -14,23 +14,37 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow"><Sparkles size={15} /> NIKE SERVER 1ST ANNIVERSARY</p>
-          <h1>
-            つくって、遊んで、<br />
-            <em>みんなで祝う。</em>
-          </h1>
-          <p className="hero-lead">
-            AIニケちゃんDiscordサーバー1周年を記念して集まった、ゲーム・映像・音楽・ツールの作品展です。
-          </p>
-          <div className="event-note">
-            <CalendarDays size={20} />
-            <span><strong>2026.09.05 SAT 22:00</strong> Discordにて開催</span>
-          </div>
-        </div>
         <div className="hero-art">
-          <img src="https://werewolf.nectalica.com/assets/ogp_nike_nectalica_2026-08-30.jpg" alt="AIニケちゃんとAI人狼" />
-          <span className="floating-label">COMMUNITY MADE</span>
+          <img
+            src="/ai-nike-fest-2026-key-visual.webp"
+            alt="AIニケフェス 2026年9月5日土曜日22時開催。1年の振り返り、AIキャラクターLT、作品コンテスト"
+            width="1672"
+            height="941"
+            fetchPriority="high"
+          />
+          <span className="floating-label">2026 FESTIVAL KEY VISUAL</span>
+        </div>
+
+        <div className="hero-content">
+          <div className="hero-copy">
+            <p className="eyebrow"><Sparkles size={15} /> NIKE SERVER 1ST ANNIVERSARY</p>
+            <h1>
+              つくって、遊んで、<br />
+              <em>みんなで祝う。</em>
+            </h1>
+            <p className="hero-lead">
+              AIニケちゃんDiscordサーバー1周年を記念して集まった、ゲーム・映像・音楽・ツールの作品展です。
+            </p>
+          </div>
+          <div className="hero-details">
+            <div className="event-note">
+              <CalendarDays size={20} />
+              <span><strong>2026.09.05 SAT 22:00</strong> Discordにて開催</span>
+            </div>
+            <a className="hero-cta" href="#works">
+              17作品を見る <ArrowUpRight size={17} />
+            </a>
+          </div>
         </div>
       </section>
 
