@@ -1,4 +1,4 @@
-import { ArrowUpRight, CalendarDays, Gamepad2, Sparkles } from 'lucide-react';
+import { ArrowUpRight, CalendarDays, Gamepad2, History, MessageCircle, Sparkles } from 'lucide-react';
 import { FestivalGallery } from './festival-gallery';
 
 export default function Home() {
@@ -39,11 +39,21 @@ export default function Home() {
           <div className="hero-details">
             <div className="event-note">
               <CalendarDays size={20} />
-              <span><strong>2026.09.05 SAT 22:00</strong> Discordにて開催</span>
+              <span><strong>2026.09.05 SAT 22:00</strong> AIニケちゃんDiscordサーバーで開催</span>
             </div>
-            <a className="hero-cta" href="#works">
-              17作品を見る <ArrowUpRight size={17} />
-            </a>
+            <div className="hero-actions">
+              <a className="hero-cta hero-venue" href="https://discord.gg/nikechan" target="_blank" rel="noreferrer">
+                <MessageCircle size={18} /> Discord会場へ参加 <ArrowUpRight size={17} />
+              </a>
+              <div className="hero-secondary-links">
+                <a className="hero-secondary" href="#works">
+                  17作品を見る <ArrowUpRight size={16} />
+                </a>
+                <a className="hero-secondary" href="https://nike.nectalica.com/" target="_blank" rel="noreferrer">
+                  <History size={16} /> 非公式年表を見る <ArrowUpRight size={16} />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

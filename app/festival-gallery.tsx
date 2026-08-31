@@ -156,11 +156,11 @@ const works: Work[] = [
     xUrl: 'https://x.com/mori_tuki/status/2093312309859115141',
   },
   {
-    title: '1周年おめでとう — 妹尾トマリ',
+    title: '1周年おめでとう',
     maker: 'ろてじん',
     handle: '@rotejin',
     category: '映像・音楽',
-    description: '「1周年おめでとう〜いつもありがとう」。妹尾トマリから届いた、やさしいお祝いショート。',
+    description: '「1周年おめでとう〜いつもありがとう」。ろてじんさんから届いた、やさしいお祝いショート。',
     image: 'https://pbs.twimg.com/amplify_video_thumb/2092853595645550592/img/mXph3ZzrOIV3olH4.jpg',
     platforms: ['Xで視聴', '動画'],
     href: 'https://x.com/rotejin/status/2092854191626822065',
