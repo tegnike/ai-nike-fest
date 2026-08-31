@@ -45,17 +45,32 @@ export default function Home() {
               <a className="hero-cta hero-venue" href="https://discord.gg/nikechan" target="_blank" rel="noreferrer">
                 <MessageCircle size={18} /> Discord会場へ参加 <ArrowUpRight size={17} />
               </a>
-              <div className="hero-secondary-links">
-                <a className="hero-secondary" href="#works">
-                  17作品を見る <ArrowUpRight size={16} />
-                </a>
-                <a className="hero-secondary" href="https://nike.nectalica.com/" target="_blank" rel="noreferrer">
-                  <History size={16} /> 非公式年表を見る <ArrowUpRight size={16} />
-                </a>
-              </div>
+              <a className="hero-secondary" href="#works">
+                17作品を見る <ArrowUpRight size={16} />
+              </a>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="timeline-feature" aria-labelledby="timeline-title">
+        <a className="timeline-card" href="https://nike.nectalica.com/" target="_blank" rel="noreferrer">
+          <div className="timeline-copy">
+            <p className="eyebrow"><History size={15} /> UNOFFICIAL ANNIVERSARY TIMELINE</p>
+            <h2 id="timeline-title">
+              AIニケちゃんサーバー<br />
+              <em>1周年・非公式年表</em>
+            </h2>
+            <p>世界の生成AIとサーバーのできごとを、同じ1年の流れでたどれるファンメイドの大作年表です。</p>
+            <span className="timeline-cta">年表をじっくり見る <ArrowUpRight size={18} /></span>
+          </div>
+          <div className="timeline-years" aria-hidden="true">
+            <span>2025</span>
+            <i />
+            <strong>2026</strong>
+            <small>1 YEAR OF MEMORIES</small>
+          </div>
+        </a>
       </section>
 
       <section className="works-section" id="works">
