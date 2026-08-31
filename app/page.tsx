@@ -62,7 +62,14 @@ export default function Home() {
               <em>1周年・非公式年表</em>
             </h2>
             <p>世界の生成AIとサーバーのできごとを、同じ1年の流れでたどれるファンメイドの大作年表です。</p>
-            <span className="timeline-cta">年表をじっくり見る <ArrowUpRight size={18} /></span>
+            <div className="timeline-meta">
+              <span className="timeline-author">
+                <small>年表制作</small>
+                <strong>ツキさん</strong>
+                <em>@mori_tuki</em>
+              </span>
+              <span className="timeline-cta">年表をじっくり見る <ArrowUpRight size={18} /></span>
+            </div>
           </div>
           <div className="timeline-years" aria-hidden="true">
             <span>2025</span>
@@ -81,10 +88,12 @@ export default function Home() {
           </div>
           <p>データベースに保存された投稿と、それぞれの公開先を確認してまとめました。対応環境も作品カードで確認できます。</p>
         </div>
-        <div className="stats" aria-label="収録作品数">
-          <div><strong>17</strong><span>作品</span></div>
-          <div><strong>8</strong><span>ゲーム</span></div>
-          <div><strong>3</strong><span>デスクトップOS</span></div>
+        <p className="stats-label">掲載作品のカテゴリ内訳</p>
+        <div className="stats" aria-label="掲載作品のカテゴリ内訳">
+          <div><span>総掲載作品</span><strong>17</strong><small>作品</small></div>
+          <div><span>ゲーム</span><strong>8</strong><small>作品</small></div>
+          <div><span>映像・音楽</span><strong>6</strong><small>作品</small></div>
+          <div><span>ツール・イラスト</span><strong>3</strong><small>作品</small></div>
         </div>
         <FestivalGallery />
       </section>
