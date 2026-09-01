@@ -88,9 +88,10 @@ export default function Home() {
           </div>
           <p>データベースに保存された投稿と、それぞれの公開先を確認してまとめました。対応環境も作品カードで確認できます。</p>
         </div>
-        <p className="stats-label">掲載作品のカテゴリ内訳</p>
-        <div className="stats" aria-label="掲載作品のカテゴリ内訳">
+        <p className="stats-label">掲載作品と参加クリエイター</p>
+        <div className="stats" aria-label="掲載作品と参加クリエイターの内訳">
           <div><span>総掲載作品</span><strong>18</strong><small>作品</small></div>
+          <div><span>参加クリエイター</span><strong>15</strong><small>人</small></div>
           <div><span>ゲーム</span><strong>9</strong><small>作品</small></div>
           <div><span>映像・音楽</span><strong>7</strong><small>作品</small></div>
           <div><span>ツール・イラスト</span><strong>2</strong><small>作品</small></div>
