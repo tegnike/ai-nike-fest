@@ -46,7 +46,7 @@ export default function Home() {
                 <MessageCircle size={18} /> Discord会場へ参加 <ArrowUpRight size={17} />
               </a>
               <a className="hero-secondary" href="#works">
-                17作品を見る <ArrowUpRight size={16} />
+                18作品を見る <ArrowUpRight size={16} />
               </a>
             </div>
           </div>
@@ -90,10 +90,10 @@ export default function Home() {
         </div>
         <p className="stats-label">掲載作品のカテゴリ内訳</p>
         <div className="stats" aria-label="掲載作品のカテゴリ内訳">
-          <div><span>総掲載作品</span><strong>17</strong><small>作品</small></div>
-          <div><span>ゲーム</span><strong>8</strong><small>作品</small></div>
-          <div><span>映像・音楽</span><strong>6</strong><small>作品</small></div>
-          <div><span>ツール・イラスト</span><strong>3</strong><small>作品</small></div>
+          <div><span>総掲載作品</span><strong>18</strong><small>作品</small></div>
+          <div><span>ゲーム</span><strong>9</strong><small>作品</small></div>
+          <div><span>映像・音楽</span><strong>7</strong><small>作品</small></div>
+          <div><span>ツール・イラスト</span><strong>2</strong><small>作品</small></div>
         </div>
         <FestivalGallery />
       </section>
@@ -109,7 +109,7 @@ export default function Home() {
 
       <footer>
         <span>AIニケフェス — AIニケちゃんDiscordサーバー1周年</span>
-        <span>2026.08.31 データベース確認時点</span>
+        <span>2026.09.01 データベース確認時点</span>
       </footer>
     </main>
   );
