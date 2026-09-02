@@ -72,7 +72,7 @@ const works: Work[] = [
     handle: '@hoshikuzukobo42',
     category: 'ゲーム',
     description: 'unityroomでそのまま遊べる、AIニケちゃんの非公式ファンゲーム。',
-    image: 'https://os-worker.unityroom.com/unityroom_production/icon/336368/icon_20260830_150645.png?h=1788070005',
+    image: '/ai-nike-bug-cleaner.webp',
     platforms: ['ブラウザ'],
     href: 'https://unityroom.com/games/nikechan-bug-cleaner',
     xUrl: 'https://x.com/hoshikuzukobo42/status/2093956047866314861',
