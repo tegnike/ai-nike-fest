@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   description: 'AIニケちゃんDiscordサーバー1周年を祝う、コミュニティ作品のオンライン展示会。',
   openGraph: {
     title: 'AIニケフェス | AIニケちゃんサーバー1周年',
-    description: 'ゲーム・映像・音楽・ツール。コミュニティから届いた20作品をまとめて紹介します。',
+    description: 'ゲーム・映像・音楽・ツール。コミュニティから届いた21作品をまとめて紹介します。',
     images: [{ url: '/og.png', width: 1200, height: 630, alt: 'AIニケフェス' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AIニケフェス | AIニケちゃんサーバー1周年',
-    description: 'コミュニティから届いた20作品をまとめて紹介します。',
+    description: 'コミュニティから届いた21作品をまとめて紹介します。',
     images: ['/og.png'],
   },
 };
