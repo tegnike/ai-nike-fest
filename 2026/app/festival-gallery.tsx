@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react';
 import { ArrowUpRight, ExternalLink, Monitor, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-type Category = 'ゲーム' | '映像・音楽' | 'ツール' | 'イラスト・制作中';
+type Category = 'ゲーム' | '映像・音楽' | 'ツール' | '読みもの' | 'イラスト・制作中';
 
 type Work = {
   title: string;
@@ -145,6 +145,17 @@ const works: Work[] = [
     xUrl: 'https://x.com/ochisamu/status/2093291250682093797',
   },
   {
+    title: 'AIニケちゃん 広島焼き死闘編',
+    maker: '桂 こぐま',
+    handle: '@photo_2014_next',
+    category: '読みもの',
+    description: '「広島焼き」という呼び名をめぐり、深夜のDiscordで始まったAIニケちゃんとの掛け合いを描く記念読みもの。',
+    image: 'https://assets.st-note.com/production/uploads/images/310251267/rectangle_large_type_2_088ca75a07abdef9046be196d42b7110.png?fit=bounds&quality=85&width=1280',
+    platforms: ['ブラウザ', 'note', '読みもの'],
+    href: 'https://note.com/ai_koguma/n/nb54462fafa4b',
+    xUrl: 'https://x.com/photo_2014_next/status/2095833198735622356',
+  },
+  {
     title: 'うごくニケちゃん',
     maker: 'るでぃ / Ludi',
     handle: '@Ludi_uni',
@@ -256,7 +267,7 @@ const works: Work[] = [
   },
 ];
 
-const categories: Array<'すべて' | Category> = ['すべて', 'ゲーム', '映像・音楽', 'ツール', 'イラスト・制作中'];
+const categories: Array<'すべて' | Category> = ['すべて', 'ゲーム', '映像・音楽', 'ツール', '読みもの', 'イラスト・制作中'];
 
 export function FestivalGallery() {
   const [active, setActive] = useState<(typeof categories)[number]>('すべて');
