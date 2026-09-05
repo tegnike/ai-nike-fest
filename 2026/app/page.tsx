@@ -87,18 +87,18 @@ export default function Home() {
               <p className="eyebrow"><Presentation size={15} /> FESTIVAL PRESENTATION</p>
               <h2 id="festival-slides-title">当日発表スライド</h2>
             </div>
-            <p>1年間の歩み、全作品の紹介、クリエイターLT、コンテスト結果まで、当日の発表資料を1〜22ページまで掲載しています。</p>
+            <p>Discord・Xの1年間の集計、投稿ランキング、定期LT、当日の案内まで、最新版の発表資料を全16枚掲載しています。</p>
           </div>
           <div className="festival-slides-stage">
             <iframe
               src="/ai-nike-fest-2026-slides.html"
-              title="AIニケフェス2026 当日発表スライド 1〜22ページ"
+              title="AIニケフェス2026 当日発表スライド 全16枚"
               loading="lazy"
               allowFullScreen
             />
           </div>
           <div className="festival-slides-footer">
-            <p><strong>全22枚</strong> スライド下部の矢印、またはキーボードの左右キーで移動できます。</p>
+            <p><strong>全16枚</strong> スライド下部の矢印、またはキーボードの左右キーで移動できます。</p>
             <div className="festival-slides-actions">
               <a href="/ai-nike-fest-2026-slides.html" target="_blank" rel="noreferrer">
                 <Maximize2 size={16} /> 全画面で見る
