@@ -93,17 +93,20 @@ a { color: inherit; text-decoration: none; }
 .timeline-years i { width: 100%; height: 3px; margin: 22px 0 25px; background: linear-gradient(90deg, #8d7ba5, #ff80b5 48%, #ffe777); border-radius: 999px; }
 .timeline-years small { margin-top: 30px; color: #cfc5da; font-size: 10px; letter-spacing: .22em; transform: rotate(3deg); }
 
-.festival-data-feature { padding: 0 max(20px, calc((100vw - 1180px) / 2)) 96px; }
-.festival-data-card { padding: clamp(28px, 4vw, 52px); background: linear-gradient(145deg, #f4edff, #fffaf5 68%); border: 1px solid #ded4e8; border-radius: 30px; box-shadow: 0 20px 60px rgb(63 36 101 / 12%); }
-.festival-data-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 30px; }
-.festival-data-heading .eyebrow { color: #ff4fb5; }
-.festival-data-heading h2 { margin: 0; font-size: clamp(32px, 4.4vw, 56px); line-height: 1.08; letter-spacing: -.06em; }
-.festival-data-heading > p { max-width: 390px; margin: 0; color: #6f677e; font-size: 14px; line-height: 1.8; }
-.festival-data-slide { position: relative; display: block; overflow: hidden; border: 1px solid #d8cce3; border-radius: 20px; background: #f8f3ff; box-shadow: 0 18px 44px rgb(45 21 87 / 14%); transition: transform .25s ease, box-shadow .25s ease; }
-.festival-data-slide:hover { transform: translateY(-4px); box-shadow: 0 24px 58px rgb(45 21 87 / 20%); }
-.festival-data-slide img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; object-fit: contain; }
-.festival-data-slide span { position: absolute; right: 16px; bottom: 16px; display: inline-flex; align-items: center; gap: 7px; padding: 11px 14px; color: white; background: rgb(23 18 40 / 88%); border-radius: 999px; backdrop-filter: blur(8px); font-size: 11px; font-weight: 800; }
-.festival-data-note { margin: 14px 2px 0; color: #8e829a; font-size: 10px; font-weight: 700; letter-spacing: .04em; }
+.festival-slides-feature { padding: 0 max(20px, calc((100vw - 1180px) / 2)) 96px; }
+.festival-slides-card { overflow: hidden; padding: clamp(28px, 4vw, 52px); color: white; background: linear-gradient(145deg, #25163f, #171228 68%); border: 1px solid #493463; border-radius: 30px; box-shadow: 0 24px 70px rgb(41 18 72 / 22%); }
+.festival-slides-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 30px; }
+.festival-slides-heading .eyebrow { color: #ffe777; }
+.festival-slides-heading h2 { margin: 0; font-size: clamp(32px, 4.4vw, 56px); line-height: 1.08; letter-spacing: -.06em; }
+.festival-slides-heading > p { max-width: 460px; margin: 0; color: #cfc5da; font-size: 14px; line-height: 1.8; }
+.festival-slides-stage { overflow: hidden; aspect-ratio: 16/9; background: #000; border: 1px solid rgb(255 255 255 / 18%); border-radius: 20px; box-shadow: 0 20px 50px rgb(0 0 0 / 32%); }
+.festival-slides-stage iframe { display: block; width: 100%; height: 100%; border: 0; }
+.festival-slides-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 18px; }
+.festival-slides-footer > p { margin: 0; color: #bdb3ca; font-size: 11px; line-height: 1.7; }
+.festival-slides-footer > p strong { margin-right: 5px; color: #ffe777; font: 700 14px/1 var(--font-space), sans-serif; }
+.festival-slides-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.festival-slides-actions a { display: inline-flex; align-items: center; gap: 7px; min-height: 42px; padding: 0 14px; color: #171228; background: #ffe777; border-radius: 12px; font-size: 11px; font-weight: 800; transition: transform .2s ease, background .2s ease; }
+.festival-slides-actions a:hover { transform: translateY(-2px); background: #ffed8f; }
 
 .works-section { padding: 92px max(20px, calc((100vw - 1180px) / 2)) 120px; background: #171228; color: white; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 32px; margin-bottom: 38px; }
@@ -156,7 +159,9 @@ footer { display: flex; justify-content: space-between; gap: 24px; padding: 24px
   .hero-details { max-width: 560px; }
   .timeline-card { grid-template-columns: 1fr; }
   .timeline-years { width: min(460px, 100%); margin: 10px auto 0; }
-  .festival-data-heading { align-items: start; flex-direction: column; gap: 18px; }
+  .festival-slides-heading { align-items: start; flex-direction: column; gap: 18px; }
+  .festival-slides-footer { align-items: start; flex-direction: column; }
+  .festival-slides-actions { justify-content: flex-start; }
   .work-grid { grid-template-columns: 1fr; }
   .section-heading { align-items: start; flex-direction: column; }
   .stats { grid-template-columns: repeat(2, 1fr); }
@@ -177,12 +182,13 @@ footer { display: flex; justify-content: space-between; gap: 24px; padding: 24px
   .timeline-card { min-height: 0; padding: 34px 24px 38px; border-radius: 22px; }
   .timeline-copy h2 { font-size: 38px; }
   .timeline-years { font-size: 54px; }
-  .festival-data-feature { padding-inline: 12px; padding-bottom: 72px; }
-  .festival-data-card { padding: 24px 16px 18px; border-radius: 22px; }
-  .festival-data-heading { margin-bottom: 20px; }
-  .festival-data-heading h2 { font-size: 34px; }
-  .festival-data-slide { border-radius: 14px; }
-  .festival-data-slide span { right: 8px; bottom: 8px; padding: 8px 10px; font-size: 9px; }
+  .festival-slides-feature { padding-inline: 12px; padding-bottom: 72px; }
+  .festival-slides-card { padding: 24px 16px 18px; border-radius: 22px; }
+  .festival-slides-heading { margin-bottom: 20px; }
+  .festival-slides-heading h2 { font-size: 34px; }
+  .festival-slides-stage { border-radius: 12px; }
+  .festival-slides-actions { display: grid; width: 100%; grid-template-columns: 1fr; }
+  .festival-slides-actions a { justify-content: center; padding-inline: 8px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   footer { flex-direction: column; }
 }

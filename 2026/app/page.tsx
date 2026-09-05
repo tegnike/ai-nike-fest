@@ -1,5 +1,4 @@
-import { ArrowUpRight, CalendarDays, Database, Gamepad2, History, MessageCircle, Sparkles } from 'lucide-react';
-import Image from 'next/image';
+import { ArrowUpRight, CalendarDays, Gamepad2, History, Maximize2, MessageCircle, Presentation, Sparkles } from 'lucide-react';
 import { FestivalGallery } from './festival-gallery';
 
 export default function Home() {
@@ -81,32 +80,31 @@ export default function Home() {
         </a>
       </section>
 
-      <section className="festival-data-feature" aria-labelledby="festival-data-title">
-        <div className="festival-data-card">
-          <div className="festival-data-heading">
+      <section className="festival-slides-feature" aria-labelledby="festival-slides-title">
+        <div className="festival-slides-card">
+          <div className="festival-slides-heading">
             <div>
-              <p className="eyebrow"><Database size={15} /> ANNIVERSARY DATA</p>
-              <h2 id="festival-data-title">1周年を、数字でも振り返る。</h2>
+              <p className="eyebrow"><Presentation size={15} /> FESTIVAL PRESENTATION</p>
+              <h2 id="festival-slides-title">当日発表スライド</h2>
             </div>
-            <p>当日発表資料から、データベースに収録された3つのハッシュタグの投稿数・投稿者数・収録期間をまとめたスライドです。</p>
+            <p>1年間の歩み、全作品の紹介、クリエイターLT、コンテスト結果まで、当日の発表資料を1〜22ページまで掲載しています。</p>
           </div>
-          <a
-            className="festival-data-slide"
-            href="/ai-nike-fest-db-hashtag-stats-2026-09-04.png"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="DB収録ハッシュタグ集計スライドを大きく見る"
-          >
-            <Image
-              src="/ai-nike-fest-db-hashtag-stats-2026-09-04.png"
-              alt="2026年9月4日時点のDB収録ハッシュタグ集計。AIニケフェス32件・18人、AIニケちゃん5,142件・165人、今日は創作の日1,043件・19人。"
-              width="1600"
-              height="900"
+          <div className="festival-slides-stage">
+            <iframe
+              src="/ai-nike-fest-2026-slides.html"
+              title="AIニケフェス2026 当日発表スライド 1〜22ページ"
               loading="lazy"
+              allowFullScreen
             />
-            <span>大きく見る <ArrowUpRight size={16} /></span>
-          </a>
-          <p className="festival-data-note">2026.09.04時点・Supabaseの収録データを集計</p>
+          </div>
+          <div className="festival-slides-footer">
+            <p><strong>全22枚</strong> スライド下部の矢印、またはキーボードの左右キーで移動できます。</p>
+            <div className="festival-slides-actions">
+              <a href="/ai-nike-fest-2026-slides.html" target="_blank" rel="noreferrer">
+                <Maximize2 size={16} /> 全画面で見る
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
