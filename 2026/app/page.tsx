@@ -1,4 +1,5 @@
-import { ArrowUpRight, CalendarDays, Gamepad2, History, MessageCircle, Sparkles } from 'lucide-react';
+import { ArrowUpRight, CalendarDays, Database, Gamepad2, History, MessageCircle, Sparkles } from 'lucide-react';
+import Image from 'next/image';
 import { FestivalGallery } from './festival-gallery';
 
 export default function Home() {
@@ -78,6 +79,35 @@ export default function Home() {
             <small>1 YEAR OF MEMORIES</small>
           </div>
         </a>
+      </section>
+
+      <section className="festival-data-feature" aria-labelledby="festival-data-title">
+        <div className="festival-data-card">
+          <div className="festival-data-heading">
+            <div>
+              <p className="eyebrow"><Database size={15} /> ANNIVERSARY DATA</p>
+              <h2 id="festival-data-title">1周年を、数字でも振り返る。</h2>
+            </div>
+            <p>当日発表資料から、データベースに収録された3つのハッシュタグの投稿数・投稿者数・収録期間をまとめたスライドです。</p>
+          </div>
+          <a
+            className="festival-data-slide"
+            href="/ai-nike-fest-db-hashtag-stats-2026-09-04.png"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="DB収録ハッシュタグ集計スライドを大きく見る"
+          >
+            <Image
+              src="/ai-nike-fest-db-hashtag-stats-2026-09-04.png"
+              alt="2026年9月4日時点のDB収録ハッシュタグ集計。AIニケフェス32件・18人、AIニケちゃん5,142件・165人、今日は創作の日1,043件・19人。"
+              width="1600"
+              height="900"
+              loading="lazy"
+            />
+            <span>大きく見る <ArrowUpRight size={16} /></span>
+          </a>
+          <p className="festival-data-note">2026.09.04時点・Supabaseの収録データを集計</p>
+        </div>
       </section>
 
       <section className="works-section" id="works">
